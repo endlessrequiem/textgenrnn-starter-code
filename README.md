@@ -17,6 +17,24 @@ textgenrnn is a Python 3 module on top of [Keras](https://github.com/fchollet/ke
 
 You can play with textgenrnn and train any text file with a GPU *for free* in this [Colaboratory Notebook](https://drive.google.com/file/d/1mMKGnVxirJnqDViH7BDJxFqWrsXlPSoK/view?usp=sharing)! Read [this blog post](http://minimaxir.com/2018/05/text-neural-networks/) or [watch this video](https://www.youtube.com/watch?v=RW7mP6BfZuY) for more information!
 
+## Usage
+
+textgenrnn can be installed [from pypi](https://pypi.python.org/pypi/textgenrnn) via `pip`:
+
+```sh
+pip3 install textgenrnn
+```
+
+You will also need to install TensorFlow (`pip3 install tensorflow` for CPU, `pip3 install tensorflow-gpu` for GPU). Note that TensorFlow cannot currently be installed this way in Python 3.7; you'll have to use an earlier Python 3 version.
+
+You can view a demo of common features and model configuration options in [this Jupyter Notebook](/docs/textgenrnn-demo.ipynb).
+
+`/datasets` contains example datasets using Hacker News/Reddit data for training textgenrnn.
+
+`/weights` contains further-pretrained models on the aforementioned datasets which can be loaded into textgenrnn.
+
+`/outputs` contains examples of text generated from the above pretrained models.
+
 ## Examples
 
 ```python
@@ -75,23 +93,7 @@ textgen.generate(interactive=True, top_n=5)
   
 This can add a *human touch* to the output; it feels like you're the writer! ([reference](https://fivethirtyeight.com/features/some-like-it-bot/))
   
-## Usage
 
-textgenrnn can be installed [from pypi](https://pypi.python.org/pypi/textgenrnn) via `pip`:
-
-```sh
-pip3 install textgenrnn
-```
-
-You will also need to install TensorFlow (`pip3 install tensorflow` for CPU, `pip3 install tensorflow-gpu` for GPU). Note that TensorFlow cannot currently be installed this way in Python 3.7; you'll have to use an earlier Python 3 version.
-
-You can view a demo of common features and model configuration options in [this Jupyter Notebook](/docs/textgenrnn-demo.ipynb).
-
-`/datasets` contains example datasets using Hacker News/Reddit data for training textgenrnn.
-
-`/weights` contains further-pretrained models on the aforementioned datasets which can be loaded into textgenrnn.
-
-`/outputs` contains examples of text generated from the above pretrained models.
 
 ## Neural Network Architecture and Implementation
 
