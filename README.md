@@ -19,15 +19,19 @@ You can play with textgenrnn and train any text file with a GPU *for free* in th
 
 ## Usage
 
-
+textgenrnn needs pip to run. Make sure you have Python that's 3 and above.
 
 To install pip, securely download get-pip.py. [1]:
 
-```sh curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py```
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+```
 
 Then run the following:
 
-```sh python get-pip.py```
+```
+python get-pip.py
+```
 
 (More detailed info here (https://www.makeuseof.com/tag/install-pip-for-python/)
 
@@ -38,7 +42,11 @@ textgenrnn can be installed [from pypi](https://pypi.python.org/pypi/textgenrnn)
 pip3 install textgenrnn
 ```
 
-You will also need to install TensorFlow (`pip3 install tensorflow` for CPU, `pip3 install tensorflow-gpu` for GPU). Note that TensorFlow cannot currently be installed this way in Python 3.7; you'll have to use an earlier Python 3 version.
+You will also need to install TensorFlow. 
+(`pip3 install tensorflow` for CPU, or 
+`pip3 install tensorflow-gpu` for GPU). 
+
+Note that TensorFlow cannot currently be installed this way in Python 3.7; you'll have to use an earlier Python 3 version.
 
 You can view a demo of common features and model configuration options in [this Jupyter Notebook](/docs/textgenrnn-demo.ipynb).
 
