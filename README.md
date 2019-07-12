@@ -19,7 +19,7 @@ You can play with textgenrnn and train any text file with a GPU *for free* in th
 
 ## Usage
 
-textgenrnn needs pip to run. Make sure you have Python that's 3 and above.
+textgenrnn needs pip to run. Make sure you have Python 3 or above.
 
 To install pip, securely download get-pip.py. [1]:
 
