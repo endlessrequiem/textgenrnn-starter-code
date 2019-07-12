@@ -19,6 +19,18 @@ You can play with textgenrnn and train any text file with a GPU *for free* in th
 
 ## Usage
 
+
+
+To install pip, securely download get-pip.py. [1]:
+
+'''curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py'''
+Then run the following:
+
+'''python get-pip.py'''
+
+(More detailed info here (https://www.makeuseof.com/tag/install-pip-for-python/)
+
+
 textgenrnn can be installed [from pypi](https://pypi.python.org/pypi/textgenrnn) via `pip`:
 
 ```sh
